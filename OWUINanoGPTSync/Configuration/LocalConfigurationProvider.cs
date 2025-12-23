@@ -23,6 +23,8 @@ internal static class LocalConfigurationProvider
 
     public static string SystemPromptFile => GetSetting("SYSTEMPROMPTFILE", "");
 
+    public static TimeSpan Interval => TimeSpan.Parse(GetSetting("INTERVAL", "01:00:00"));
+
     private static string GetSetting(string key, string fallback)
     {
         return _configuration[key] ?? fallback;
