@@ -78,7 +78,7 @@ internal class Program
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"error: {ex.Message}");
+                Console.WriteLine($"error: {ex}");
             }
             finally
             {
